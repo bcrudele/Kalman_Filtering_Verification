@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_fpga_top_min_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="tb_fpga_top_min" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="74.540 ns"></ZoomStartTime>
+      <ZoomEndTime time="817.541 ns"></ZoomEndTime>
+      <Cursor1Time time="320.064 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="152"></NameColumnWidth>
+      <ValueColumnWidth column_width="136"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="14" />
+   <wvobject fp_name="/tb_fpga_top_min/clk_300" type="logic">
+      <obj_property name="ElementShortName">clk_300</obj_property>
+      <obj_property name="ObjectShortName">clk_300</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fpga_top_min/rst_n_btn" type="logic">
+      <obj_property name="ElementShortName">rst_n_btn</obj_property>
+      <obj_property name="ObjectShortName">rst_n_btn</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fpga_top_min/z11r" type="array">
+      <obj_property name="ElementShortName">z11r[15:0]</obj_property>
+      <obj_property name="ObjectShortName">z11r[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fpga_top_min/z11i" type="array">
+      <obj_property name="ElementShortName">z11i[15:0]</obj_property>
+      <obj_property name="ObjectShortName">z11i[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fpga_top_min/z12r" type="array">
+      <obj_property name="ElementShortName">z12r[15:0]</obj_property>
+      <obj_property name="ObjectShortName">z12r[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fpga_top_min/z12i" type="array">
+      <obj_property name="ElementShortName">z12i[15:0]</obj_property>
+      <obj_property name="ObjectShortName">z12i[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fpga_top_min/z21r" type="array">
+      <obj_property name="ElementShortName">z21r[15:0]</obj_property>
+      <obj_property name="ObjectShortName">z21r[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fpga_top_min/z21i" type="array">
+      <obj_property name="ElementShortName">z21i[15:0]</obj_property>
+      <obj_property name="ObjectShortName">z21i[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fpga_top_min/z22r" type="array">
+      <obj_property name="ElementShortName">z22r[15:0]</obj_property>
+      <obj_property name="ObjectShortName">z22r[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fpga_top_min/z22i" type="array">
+      <obj_property name="ElementShortName">z22i[15:0]</obj_property>
+      <obj_property name="ObjectShortName">z22i[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fpga_top_min/leds" type="array">
+      <obj_property name="ElementShortName">leds[3:0]</obj_property>
+      <obj_property name="ObjectShortName">leds[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fpga_top_min/h11r_out" type="array">
+      <obj_property name="ElementShortName">h11r_out[15:0]</obj_property>
+      <obj_property name="ObjectShortName">h11r_out[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fpga_top_min/h11i_out" type="array">
+      <obj_property name="ElementShortName">h11i_out[15:0]</obj_property>
+      <obj_property name="ObjectShortName">h11i_out[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="group60" type="group">
+      <obj_property name="label">2x2_Core</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/tb_fpga_top_min/DUT/DUT/clk" type="logic">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_fpga_top_min/DUT/DUT/rst_n" type="logic">
+         <obj_property name="ElementShortName">rst_n</obj_property>
+         <obj_property name="ObjectShortName">rst_n</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_fpga_top_min/DUT/DUT/en" type="logic">
+         <obj_property name="ElementShortName">en</obj_property>
+         <obj_property name="ObjectShortName">en</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_fpga_top_min/DUT/DUT/load_init" type="logic">
+         <obj_property name="ElementShortName">load_init</obj_property>
+         <obj_property name="ObjectShortName">load_init</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_fpga_top_min/DUT/DUT/x0" type="array">
+         <obj_property name="ElementShortName">x0[15:0]</obj_property>
+         <obj_property name="ObjectShortName">x0[15:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_fpga_top_min/DUT/DUT/P0" type="array">
+         <obj_property name="ElementShortName">P0[31:0]</obj_property>
+         <obj_property name="ObjectShortName">P0[31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_fpga_top_min/DUT/DUT/Q_k" type="array">
+         <obj_property name="ElementShortName">Q_k[31:0]</obj_property>
+         <obj_property name="ObjectShortName">Q_k[31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_fpga_top_min/DUT/DUT/R_k" type="array">
+         <obj_property name="ElementShortName">R_k[31:0]</obj_property>
+         <obj_property name="ObjectShortName">R_k[31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_fpga_top_min/DUT/DUT/z11_re" type="array">
+         <obj_property name="ElementShortName">z11_re[15:0]</obj_property>
+         <obj_property name="ObjectShortName">z11_re[15:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_fpga_top_min/DUT/DUT/z11_im" type="array">
+         <obj_property name="ElementShortName">z11_im[15:0]</obj_property>
+         <obj_property name="ObjectShortName">z11_im[15:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_fpga_top_min/DUT/DUT/z12_re" type="array">
+         <obj_property name="ElementShortName">z12_re[15:0]</obj_property>
+         <obj_property name="ObjectShortName">z12_re[15:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_fpga_top_min/DUT/DUT/z12_im" type="array">
+         <obj_property name="ElementShortName">z12_im[15:0]</obj_property>
+         <obj_property name="ObjectShortName">z12_im[15:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_fpga_top_min/DUT/DUT/z21_re" type="array">
+         <obj_property name="ElementShortName">z21_re[15:0]</obj_property>
+         <obj_property name="ObjectShortName">z21_re[15:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_fpga_top_min/DUT/DUT/z21_im" type="array">
+         <obj_property name="ElementShortName">z21_im[15:0]</obj_property>
+         <obj_property name="ObjectShortName">z21_im[15:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_fpga_top_min/DUT/DUT/z22_re" type="array">
+         <obj_property name="ElementShortName">z22_re[15:0]</obj_property>
+         <obj_property name="ObjectShortName">z22_re[15:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_fpga_top_min/DUT/DUT/z22_im" type="array">
+         <obj_property name="ElementShortName">z22_im[15:0]</obj_property>
+         <obj_property name="ObjectShortName">z22_im[15:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_fpga_top_min/DUT/DUT/h11_re" type="array">
+         <obj_property name="ElementShortName">h11_re[15:0]</obj_property>
+         <obj_property name="ObjectShortName">h11_re[15:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_fpga_top_min/DUT/DUT/h11_im" type="array">
+         <obj_property name="ElementShortName">h11_im[15:0]</obj_property>
+         <obj_property name="ObjectShortName">h11_im[15:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_fpga_top_min/DUT/DUT/h12_re" type="array">
+         <obj_property name="ElementShortName">h12_re[15:0]</obj_property>
+         <obj_property name="ObjectShortName">h12_re[15:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_fpga_top_min/DUT/DUT/h12_im" type="array">
+         <obj_property name="ElementShortName">h12_im[15:0]</obj_property>
+         <obj_property name="ObjectShortName">h12_im[15:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_fpga_top_min/DUT/DUT/h21_re" type="array">
+         <obj_property name="ElementShortName">h21_re[15:0]</obj_property>
+         <obj_property name="ObjectShortName">h21_re[15:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_fpga_top_min/DUT/DUT/h21_im" type="array">
+         <obj_property name="ElementShortName">h21_im[15:0]</obj_property>
+         <obj_property name="ObjectShortName">h21_im[15:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_fpga_top_min/DUT/DUT/h22_re" type="array">
+         <obj_property name="ElementShortName">h22_re[15:0]</obj_property>
+         <obj_property name="ObjectShortName">h22_re[15:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_fpga_top_min/DUT/DUT/h22_im" type="array">
+         <obj_property name="ElementShortName">h22_im[15:0]</obj_property>
+         <obj_property name="ObjectShortName">h22_im[15:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_fpga_top_min/DUT/DUT/valid_all" type="logic">
+         <obj_property name="ElementShortName">valid_all</obj_property>
+         <obj_property name="ObjectShortName">valid_all</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_fpga_top_min/DUT/DUT/last_latency" type="array">
+         <obj_property name="ElementShortName">last_latency[15:0]</obj_property>
+         <obj_property name="ObjectShortName">last_latency[15:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_fpga_top_min/DUT/DUT/v" type="array">
+         <obj_property name="ElementShortName">v[7:0]</obj_property>
+         <obj_property name="ObjectShortName">v[7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_fpga_top_min/DUT/DUT/ready" type="array">
+         <obj_property name="ElementShortName">ready[7:0]</obj_property>
+         <obj_property name="ObjectShortName">ready[7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_fpga_top_min/DUT/DUT/measuring" type="logic">
+         <obj_property name="ElementShortName">measuring</obj_property>
+         <obj_property name="ObjectShortName">measuring</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_fpga_top_min/DUT/DUT/cnt" type="array">
+         <obj_property name="ElementShortName">cnt[15:0]</obj_property>
+         <obj_property name="ObjectShortName">cnt[15:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="group89" type="group">
+         <obj_property name="label">k11r</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="isExpanded"></obj_property>
+         <wvobject fp_name="/tb_fpga_top_min/DUT/DUT/k11r/z_k" type="array">
+            <obj_property name="ElementShortName">z_k[15:0]</obj_property>
+            <obj_property name="ObjectShortName">z_k[15:0]</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_fpga_top_min/DUT/DUT/k11r/load_init" type="logic">
+            <obj_property name="ElementShortName">load_init</obj_property>
+            <obj_property name="ObjectShortName">load_init</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_fpga_top_min/DUT/DUT/k11r/x0" type="array">
+            <obj_property name="ElementShortName">x0[15:0]</obj_property>
+            <obj_property name="ObjectShortName">x0[15:0]</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_fpga_top_min/DUT/DUT/k11r/P0" type="array">
+            <obj_property name="ElementShortName">P0[31:0]</obj_property>
+            <obj_property name="ObjectShortName">P0[31:0]</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_fpga_top_min/DUT/DUT/k11r/Q_k" type="array">
+            <obj_property name="ElementShortName">Q_k[31:0]</obj_property>
+            <obj_property name="ObjectShortName">Q_k[31:0]</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_fpga_top_min/DUT/DUT/k11r/R_k" type="array">
+            <obj_property name="ElementShortName">R_k[31:0]</obj_property>
+            <obj_property name="ObjectShortName">R_k[31:0]</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_fpga_top_min/DUT/DUT/k11r/m_valid" type="logic">
+            <obj_property name="ElementShortName">m_valid</obj_property>
+            <obj_property name="ObjectShortName">m_valid</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_fpga_top_min/DUT/DUT/k11r/m_ready" type="logic">
+            <obj_property name="ElementShortName">m_ready</obj_property>
+            <obj_property name="ObjectShortName">m_ready</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_fpga_top_min/DUT/DUT/k11r/x_hat" type="array">
+            <obj_property name="ElementShortName">x_hat[15:0]</obj_property>
+            <obj_property name="ObjectShortName">x_hat[15:0]</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_fpga_top_min/DUT/DUT/k11r/x_reg" type="array">
+            <obj_property name="ElementShortName">x_reg[15:0]</obj_property>
+            <obj_property name="ObjectShortName">x_reg[15:0]</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_fpga_top_min/DUT/DUT/k11r/P_reg" type="array">
+            <obj_property name="ElementShortName">P_reg[31:0]</obj_property>
+            <obj_property name="ObjectShortName">P_reg[31:0]</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_fpga_top_min/DUT/DUT/k11r/x_pred" type="array">
+            <obj_property name="ElementShortName">x_pred[15:0]</obj_property>
+            <obj_property name="ObjectShortName">x_pred[15:0]</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_fpga_top_min/DUT/DUT/k11r/P_pred" type="array">
+            <obj_property name="ElementShortName">P_pred[31:0]</obj_property>
+            <obj_property name="ObjectShortName">P_pred[31:0]</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_fpga_top_min/DUT/DUT/k11r/denom" type="array">
+            <obj_property name="ElementShortName">denom[31:0]</obj_property>
+            <obj_property name="ObjectShortName">denom[31:0]</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_fpga_top_min/DUT/DUT/k11r/K_q" type="array">
+            <obj_property name="ElementShortName">K_q[31:0]</obj_property>
+            <obj_property name="ObjectShortName">K_q[31:0]</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_fpga_top_min/DUT/DUT/k11r/innov0" type="array">
+            <obj_property name="ElementShortName">innov0[15:0]</obj_property>
+            <obj_property name="ObjectShortName">innov0[15:0]</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_fpga_top_min/DUT/DUT/k11r/innov_pipe" type="array">
+            <obj_property name="ElementShortName">innov_pipe[0:7][15:0]</obj_property>
+            <obj_property name="ObjectShortName">innov_pipe[0:7][15:0]</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_fpga_top_min/DUT/DUT/k11r/xpred_pipe" type="array">
+            <obj_property name="ElementShortName">xpred_pipe[0:7][15:0]</obj_property>
+            <obj_property name="ObjectShortName">xpred_pipe[0:7][15:0]</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_fpga_top_min/DUT/DUT/k11r/Ppred_pipe" type="array">
+            <obj_property name="ElementShortName">Ppred_pipe[0:7][31:0]</obj_property>
+            <obj_property name="ObjectShortName">Ppred_pipe[0:7][31:0]</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_fpga_top_min/DUT/DUT/k11r/i" type="array">
+            <obj_property name="ElementShortName">i[31:0]</obj_property>
+            <obj_property name="ObjectShortName">i[31:0]</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_fpga_top_min/DUT/DUT/k11r/Kinnov" type="array">
+            <obj_property name="ElementShortName">Kinnov[0:1][47:0]</obj_property>
+            <obj_property name="ObjectShortName">Kinnov[0:1][47:0]</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_fpga_top_min/DUT/DUT/k11r/Pupd" type="array">
+            <obj_property name="ElementShortName">Pupd[0:1][63:0]</obj_property>
+            <obj_property name="ObjectShortName">Pupd[0:1][63:0]</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_fpga_top_min/DUT/DUT/k11r/one_q" type="array">
+            <obj_property name="ElementShortName">one_q[31:0]</obj_property>
+            <obj_property name="ObjectShortName">one_q[31:0]</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_fpga_top_min/DUT/DUT/k11r/one_minus_K" type="array">
+            <obj_property name="ElementShortName">one_minus_K[31:0]</obj_property>
+            <obj_property name="ObjectShortName">one_minus_K[31:0]</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_fpga_top_min/DUT/DUT/k11r/dx" type="array">
+            <obj_property name="ElementShortName">dx[15:0]</obj_property>
+            <obj_property name="ObjectShortName">dx[15:0]</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_fpga_top_min/DUT/DUT/k11r/Pn" type="array">
+            <obj_property name="ElementShortName">Pn[31:0]</obj_property>
+            <obj_property name="ObjectShortName">Pn[31:0]</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_fpga_top_min/DUT/DUT/k11r/vpipe" type="array">
+            <obj_property name="ElementShortName">vpipe[9:0]</obj_property>
+            <obj_property name="ObjectShortName">vpipe[9:0]</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_fpga_top_min/DUT/DUT/k11r/commit" type="logic">
+            <obj_property name="ElementShortName">commit</obj_property>
+            <obj_property name="ObjectShortName">commit</obj_property>
+         </wvobject>
+      </wvobject>
+   </wvobject>
+</wave_config>

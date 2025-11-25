@@ -1,5 +1,14 @@
 `timescale 1ns / 1ps
 
+// Company: InnoMountain
+// Last Edited: 11/24/2025
+// Authors: Sri Phanindra Perali & Brandon Crudele
+// Notes:
+// - Scalar Kalman filter, Q1.15 state, Q3.29 covariance
+// - Divider scaled for Q29; 64-bit numerator avoids overflow
+// - Pipelines: innovation (DIV_LAT) + multiplier (MUL_LAT)
+// - m_valid asserts after total latency; s_ready always 1
+
 module kf_scalar #(
   parameter WX=16, WF_X=15,    // state Q1.15
   parameter WP=32, WF_P=29,    // cov Q3.29
@@ -31,7 +40,6 @@ module kf_scalar #(
   wire signed [WP-1:0] P_pred = P_reg + Q_k;
 
   // Divider: K = P / (P + R)
-  // FIX: Output K in correct WF_P format (Q29) to match one_q
   wire signed [WP-1:0] denom = P_pred + R_k;
   wire signed [WP-1:0] K_q;
 
@@ -75,7 +83,7 @@ module kf_scalar #(
 
   wire signed [WP-1:0] one_q = (32'sd1 <<< WF_P);
   
-  // FIX: K_q is now Q29, one_q is Q29. Direct subtraction is now valid.
+  // Q29
   wire signed [WP-1:0] one_minus_K = one_q - K_q;
 
   always @(posedge clk or negedge rst_n) begin
@@ -96,8 +104,7 @@ module kf_scalar #(
     end
   end
 
-  // FIX: Extraction index matches WF_P exactly now. 
-  // We want Q15 result from Q44 data. We drop the bottom 29 bits (WF_P).
+  // Q15 result from Q44 data. Drop the bottom 29 bits (WF_P).
   wire signed [WX-1:0] dx = Kinnov[MUL_LAT-1][WF_P +: WX]; 
   wire signed [WP-1:0] Pn = Pupd[MUL_LAT-1][WF_P +: WP];
 
@@ -138,8 +145,8 @@ module div32_pipe #(
   input  wire signed [31:0] num, den,
   output wire signed [31:0] quo
 );
-  // FIX: Use 64-bit wire for the shift to prevent overflow
-  // We sign-extend 'num' to 64 bits, then shift, then divide.
+
+  // Sign-extend 'num' to 64 bits, then shift, then divide.
   wire signed [63:0] num_extended = {{32{num[31]}}, num}; 
   wire signed [63:0] num_scaled   = num_extended <<< WF_P;
   

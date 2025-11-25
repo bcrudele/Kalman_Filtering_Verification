@@ -1,24 +1,6 @@
 //`timescale 1ns / 1ps
 ////////////////////////////////////////////////////////////////////////////////////
-//// Company: 
-//// Engineer: 
-//// 
-//// Create Date: 10/21/2025 01:35:15 PM
-//// Design Name: 
-//// Module Name: fpga_top_min
-//// Project Name: 
-//// Target Devices: 
-//// Tool Versions: 
-//// Description: 
-//// 
-//// Dependencies: 
-//// 
-//// Revision:
-//// Revision 0.01 - File Created
-//// Additional Comments:
-//// 
-////////////////////////////////////////////////////////////////////////////////////
-
+// Old Code:
 
 //// fpga_top_min.v - minimal pins: clk, reset, LEDs
 //module fpga_top_min(
@@ -91,16 +73,13 @@
 
 
 `timescale 1ns / 1ps
-//////////////////////////////////////////////////////////////////////////////////
-// fpga_top_min.v - minimal pins: clk, reset, LEDs
-// Tuned for observable Kalman Filtering convergence
-//////////////////////////////////////////////////////////////////////////////////
+
 
 module fpga_top_min(
   input  wire clk_300,     // board clock 
   input  wire rst_n_btn,   // active-low pushbutton
   
-  // Expose these for Testbench control (Sim only usually, but fine for prototype)
+  // for tb:
   input  wire signed [15:0] z11r_in, z11i_in,
   input  wire signed [15:0] z12r_in, z12i_in,
   input  wire signed [15:0] z21r_in, z21i_in,
@@ -108,7 +87,7 @@ module fpga_top_min(
   
   output wire [3:0] leds,
   
-  // Expose results for TB observation
+  // for tb:
   output wire signed [15:0] h11r_out, h11i_out
 );
   wire rst = ~rst_n_btn;
@@ -117,17 +96,12 @@ module fpga_top_min(
   localparam WX=16, WF_X=15, WP=32, WF_P=29, DIV_LAT=8, MUL_LAT=2;
 
   // ---------------------------------------------------------
-  // PARAMETER TUNING FIX
+  // PARAMETER TUNING
   // ---------------------------------------------------------
-  // Previous P0 was 2.0 (Too high)
-  // Previous Rk was 0.001 (Too low)
-  // Resulted in K = 0.999 (No filtering)
-  
-  // New Setup:
   // P0 = 1.0 (Initial Uncertainty)
   // Rk = 1.0 (Measurement Noise - lots of noise!)
   // Expected Initial K = 1 / (1+1) = 0.5
-  // This will make x_hat = 0.5 * z (visible filtering!)
+  // This will make x_hat = 0.5 * z -ish
   // ---------------------------------------------------------
   
   reg signed [WP-1:0] P0 = 32'sd1 <<< 29; // 1.0 in Q3.29
@@ -143,7 +117,7 @@ module fpga_top_min(
   wire [15:0] last_latency;
 
   // DUT Instance
-  // Note: We wire inputs directly to the module ports now
+  // Note: Wire inputs directly to the module ports
   kf_mimo2x2_core #(
     .WX(WX),.WF_X(WF_X),.WP(WP),.WF_P(WF_P),.DIV_LAT(DIV_LAT),.MUL_LAT(MUL_LAT)
   ) DUT (
@@ -187,9 +161,7 @@ module fpga_top_min(
            state <= S_IDLE;
         end
         S_IDLE: begin
-           // Simple heartbeat to trigger measurement every few cycles
-           // Or just let TB drive inputs and we pulse EN constantly?
-           // Let's pulse EN every 32 cycles
+           // Simple heartbeat
            en <= 1; 
            state <= S_MEASURE;
         end

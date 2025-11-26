@@ -1,4 +1,4 @@
-# Project README
+# MMSE Project
 
 ## TLDR;
 MATLAB scripts and Verilog RTL files for fixed-point LU decomposition and Kalman filtering.

@@ -1,7 +1,7 @@
 # Project README
 
 ## TLDR;
-MATLAB scripts and Verilog RTL files for fixed-point LU decomposition, Kalman filtering, and FPGA-based MIMO signal processing.
+MATLAB scripts and Verilog RTL files for fixed-point LU decomposition and Kalman filtering.
 
 ## File Summary
 
@@ -24,3 +24,4 @@ MATLAB scripts and Verilog RTL files for fixed-point LU decomposition, Kalman fi
 
 ## Notes
 - MATLAB scripts may use doubles, *in progress*
+- No timing reports / stress testing has been done for my RTL implementation
